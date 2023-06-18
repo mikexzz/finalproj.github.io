@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    font-size: 19px;
+    font-family: 'Neue Montreal',sans-serif;
+    font-weight: 100;
+    background-color: #161616;
+    color: #ececec;
+}
+

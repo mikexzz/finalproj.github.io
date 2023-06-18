@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project By George</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/5696c2d02b.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    
+  <div class="main-container">
+    <header class="d-flex">
+        <div class="logo-png">
+            <a href="/html/index.html"><img src="/img/image.png" alt="Dalmina R"></a>
+        </div>
+        <nav class="d-flex">
+            <a href="/html/index.html">home</a>
+            <a href="/html/viewall.html">collection</a>
+            <a href="/html/lookbook.html">lookbook</a>
+            <a href="/html/cart.html">cart</a>
+        </nav>
+    </header>
+</div>
+
+<div class="cart-container">
+  <h1>Cart</h1>
+  <div id="cart-items"></div>
+  <div class="cart-selection">
+    <div class="checkout-btn">
+      <button onclick="checkOut()" id="checkOut">Checkout</button>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Collection</a></li>
+    <li><a href="#">Lookbook</a></li>
+    <li><a href="#">Cart</a></li>
+    <li><a href="#">Profile</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    Dalmina Copyright © 2023 - All rights reserved 
+    </div>
+    </div>
+    </footer>
+
+
+
+
+  <script>
+    function renderCart() {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const cartContainer = document.getElementById('cart-items');
+      cartContainer.innerHTML = '';
+      cartItems.forEach(function(item, index) {
+        const cartItemElement = document.createElement('div');
+        cartItemElement.textContent = 'Item: $' + item.price;  
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.addEventListener('click', function() {
+          removeFromCart(index);
+        });
+        cartItemElement.appendChild(removeButton);
+        cartContainer.appendChild(cartItemElement);
+      });
+    }
+    function removeFromCart(index) {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      cartItems.splice(index, 1);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      renderCart();
+    }
+    function checkout() {
+      localStorage.removeItem('cartItems');
+      window.location.href = '#';
+    }
+    renderCart();
+  </script>
+
+  <div id="loading-overlay">
+    <div id="loading-bar"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>   

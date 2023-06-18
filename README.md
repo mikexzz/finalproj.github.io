@@ -1,2 +1,2 @@
-# finalproj.github.io
-Final Project By George
+# Final website by George.G
+:)

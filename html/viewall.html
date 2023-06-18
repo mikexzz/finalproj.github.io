@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project By George</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/5696c2d02b.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+
+  <div class="main-container">
+    <header class="d-flex">
+        <div class="logo-png">
+            <a href="/html/index.html"><img src="/img/image.png" alt="Dalmina R"></a>
+        </div>
+        <nav class="d-flex">
+            <a href="/html/index.html">home</a>
+            <a href="/html/viewall.html">collection</a>
+            <a href="/html/lookbook.html">lookbook</a>
+            <a href="/html/cart.html">cart</a>
+        </nav>
+    </header>
+</div>
+
+        <div class="viewall-ul-li">
+            <ul>
+              <li onclick="applyInfiniteLineThrough(this)">SS 2023</li>
+              <li onclick="applyInfiniteLineThrough(this)">FW 2022</li>
+              <li onclick="applyInfiniteLineThrough(this)">SS 2020</li>
+              <li onclick="applyInfiniteLineThrough(this)">FW 2019</li>
+              <li onclick="applyInfiniteLineThrough(this)">SS 2018</li>
+              <li onclick="applyInfiniteLineThrough(this)">FW 2017</li>
+            </ul>
+          </div>
+          <p id="message"></p>
+
+
+          <div class="product-slider">
+            <input type="radio" id="s-1" name="slider-control" checked="checked">
+            <input type="radio" id="s-2" name="slider-control">
+            <input type="radio" id="s-3" name="slider-control">
+            <div class="js-slider">
+              <figure class="js-slider_item img-1">
+                <div class="js-slider_img">
+                  <img class="c-img-w-full" src="/img/2.png" alt="">
+                </div>
+                <figcaption class="wo-caption">
+                  <h3 class="wo-h3">
+                    <div class="c-label">FW 2017</div>
+                    <br class="view-sm mb-s">$119.99</h3>
+                  <ul class="wo-credit">
+                    <li>Lorem Ipsum (1789-1800)</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
+                    <li>Lorem ipsum dolor sit amet consectetur
+                      <span class="c-txt-s">amet consectetur, adipisicing elit.</span></li>
+                      <button class="addcart-btn" onclick="addToCart(119.99)">Add To Cart</button>
+                      <button class="addcart-btn" onclick="BuyNow(119.99)">Buy Now</button>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="js-slider_item img-2">
+                <div class="js-slider_img">
+                  <img class="c-img-h-full" src="/img/3.png" alt=""></div>
+                <figcaption class="wo-caption">
+                  <h3 class="wo-h3">FW 2017</h3>
+                  <ul class="wo-credit">
+                    <li>Lorem Ipsum (1789-1800)</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>amet consectetur, adipisicing elit.</li>
+                    <button class="addcart-btn" onclick="addToCart(119.99)">Add to cart</button>
+                    <button class="addcart-btn" onclick="BuyNow(119.99)">Buy Now</button></ul>
+                </figcaption>
+              </figure>
+              <figure class="js-slider_item img-3">
+                <div class="js-slider_img">
+                  <img class="c-img-h-full" src="/img/2.png" alt=""></div>
+                <figcaption class="wo-caption">
+                  <h3 class="wo-h3">FW 2017</h3>
+                  <ul class="wo-credit">
+                    <li>Lorem Ipsum (1789-1800)</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>amet consectetur, adipisicing elit.</li>
+                    <button class="addcart-btn" onclick="addToCart(119.99)">Add to cart</button>
+                    <button class="addcart-btn" onclick="BuyNow(119.99)">Buy Now</button></ul>
+                </figcaption>
+              </figure>
+              <div class="js-slider_nav">
+                <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+                <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+                <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+                <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+                <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+                <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+              </div>
+              <div class="js-slider_indicator">
+                <div class="js-slider-indi indi-1"></div>
+                <div class="js-slider-indi indi-2"></div>
+                <div class="js-slider-indi indi-3"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            
+            <div class="row">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Lookbook</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Profile</a></li>
+            </ul>
+            </div>
+            
+            <div class="row">
+            Dalmina Copyright © 2023 - All rights reserved 
+            </div>
+            </div>
+            </footer>
+
+
+
+
+
+
+<script>
+    function addToCart(price) {
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const newItem = {
+        price: price
+      };
+      cartItems.push(newItem);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      window.location.href = 'cart.html';
+    }
+  </script>
+
+  
+
+
+        <div id="loading-overlay">
+            <div id="loading-bar"></div>
+        <script src="/js/main.js"></script>
+    </body>
+    </html>       
